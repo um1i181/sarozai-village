@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Sarozai Village — History, Culture, Education &amp; Heritage</title>
+    
+    <meta name="description" content="Discover the history, culture, education, people, landmarks and stories of Sarozai.">
+    <meta name="keywords" content="temporary">
+    <meta name="author" content="Sarozai Village Platform">
+    
+    <!-- Open Graph / Social Sharing Meta -->
+    <meta property="og:title" content="Sarozai Village — History, Culture, Education &amp; Heritage">
+    <meta property="og:description" content="Discover the history, culture, education, people, landmarks and stories of Sarozai.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/sarozai-village/static/images/home-1.jpg">
+
+    <!-- Google AdSense Auto-Injection if Enabled -->
+    
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Global Stylesheet -->
+    <link rel="stylesheet" href="/sarozai-village/static/css/style.css">
+    
+</head>
+<body class="site-body">
+
+    <!-- ======================================================================
+         SITE HEADER / NAVBAR
+    ======================================================================= -->
+    <header class="navbar" id="mainNavbar">
+        <!-- Brand Logo -->
+        <a href="/sarozai-village/index.html" class="logo" aria-label="Sarozai Village Home">
+            <img src="/sarozai-village/static/images/sarozai-logo.png" 
+                 alt="Sarozai Village Logo"
+                 onerror="this.onerror=null; this.src='/sarozai-village/static/images/home-1.jpg'">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+            <a href="/sarozai-village/index.html" class="active">Home</a>
+            <a href="/sarozai-village/about.html" class="">About</a>
+
+            <div class="nav-dropdown">
+                <button type="button"
+                        class="nav-dropdown-toggle"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        aria-controls="nav-heritage-menu">
+                    Heritage
+                </button>
+                <div class="nav-dropdown-menu" id="nav-heritage-menu">
+                    <a href="/sarozai-village/history.html" class="">History</a>
+                    <a href="/sarozai-village/culture.html" class="">Culture</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown community-dropdown">
+                <button type="button"
+                        class="nav-dropdown-toggle"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        aria-controls="nav-community-menu">
+                    Community
+                </button>
+                <div class="nav-dropdown-menu" id="nav-community-menu">
+                    <a href="/sarozai-village/education.html" class="">Education</a>
+                    <a href="/sarozai-village/notable-people.html" class="">Notable People</a>
+                    <a href="/sarozai-village/scholars.html" class="">Scholars</a>
+                    <a href="/sarozai-village/welfare.html" class="">Welfare</a>
+                    <a href="/sarozai-village/places.html" class="">Places</a>
+                    <a href="/sarozai-village/games.html" class="">Games</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <button type="button"
+                        class="nav-dropdown-toggle"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                        aria-controls="nav-media-menu">
+                    Media
+                </button>
+                <div class="nav-dropdown-menu" id="nav-media-menu">
+                    <a href="/sarozai-village/gallery.html" class="">Gallery</a>
+                    <a href="/sarozai-village/news.html" class="">News</a>
+                </div>
+            </div>
+
+            <a href="/sarozai-village/contact.html" class="">Contact</a>
+        </nav>
+
+        <!-- Right Side Quick Actions -->
+        <div class="nav-actions">
+            
+
+            <button class="theme-button" id="themeToggle" type="button" aria-label="Toggle dark/light mode">
+                🌙
+            </button>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open mobile menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- ======================================================================
+         MOBILE NAVIGATION DRAWER
+    ======================================================================= -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+        <div class="mobile-nav-header">
+            <span class="mobile-nav-title">Sarozai Navigation</span>
+            <button type="button" class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">✕</button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="/sarozai-village/index.html" class="active">Home</a>
+            <a href="/sarozai-village/about.html" class="">About</a>
+
+            <a href="/sarozai-village/history.html" class="">History</a>
+            <a href="/sarozai-village/culture.html" class="">Culture</a>
+
+            <details class="mobile-nav-group" >
+                <summary>Community</summary>
+                <a href="/sarozai-village/education.html" class="">Education</a>
+                <a href="/sarozai-village/notable-people.html" class="">Notable People</a>
+                <a href="/sarozai-village/scholars.html" class="">Scholars</a>
+                <a href="/sarozai-village/welfare.html" class="">Welfare</a>
+                <a href="/sarozai-village/places.html" class="">Places &amp; Landmarks</a>
+                <a href="/sarozai-village/games.html" class="">Games</a>
+            </details>
+
+            <a href="/sarozai-village/gallery.html" class="">Gallery</a>
+            <a href="/sarozai-village/news.html" class="">News &amp; Events</a>
+
+            <a href="/sarozai-village/contact.html" class="">✉️ Contact Us</a>
+            
+
+            
+            <div class="mobile-nav-admin">
+                <a href="#" class="admin-login-link">🔐 Admin Login</a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Flash Messages -->
+    <div class="flash-container" id="flashContainer">
+        
+            
+        
+    </div>
+
+    <!-- ======================================================================
+         MAIN CONTENT BLOCK
+    ======================================================================= -->
+    <main class="site-main" id="mainContent">
+        
+<!-- ==========================================================================
+     HERO SECTION
+=========================================================================== -->
+<section class="hero-section" style="--hero-image: url('/sarozai-village/static/images/home-1.jpg');">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-badge">
+        </div>
+        <h1 class="hero-title">
+            Sarozai Village
+        </h1>
+        <p class="hero-tagline">
+            Our Village. Our History. Our Story.
+        </p>
+        <p class="hero-lead">
+            Discover the history, culture, education, people, landmarks and stories of Sarozai.
+        </p>
+        
+        <div class="hero-actions">
+            <a href="/sarozai-village/about.html" class="btn-primary">Explore Sarozai</a>
+            <a href="/sarozai-village/history.html" class="btn-outline">History Archives</a>
+            <a href="/sarozai-village/gallery.html" class="btn-outline">Photo Gallery</a>
+        </div>
+    </div>
+</section>
+
+<section class="glance-section">
+    <div class="site-container">
+        <div class="section-header-row text-center-row">
+            <h2 class="section-title">Sarozai at a Glance</h2>
+        </div>
+        <div class="glance-grid">
+            
+            
+            <article class="glance-item">
+                <span class="glance-index">01</span>
+                <h3>Location</h3>
+                <p>[Add verified information about the location of Sarozai here.]</p>
+            </article>
+            
+            
+            <article class="glance-item">
+                <span class="glance-index">02</span>
+                <h3>Community</h3>
+                <p>[Add information about the community of Sarozai here.]</p>
+            </article>
+            
+            
+            <article class="glance-item">
+                <span class="glance-index">03</span>
+                <h3>Heritage</h3>
+                <p>[Add information about the heritage of Sarozai here.]</p>
+            </article>
+            
+            
+            <article class="glance-item">
+                <span class="glance-index">04</span>
+                <h3>Education</h3>
+                <p>[Add information about education in Sarozai here.]</p>
+            </article>
+            
+            
+            <article class="glance-item">
+                <span class="glance-index">05</span>
+                <h3>Natural Features</h3>
+                <p>[Add information about natural features, springs, landmarks, etc. here.]</p>
+            </article>
+            
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================================
+     QUICK STATS BAR
+=========================================================================== -->
+
+
+<!-- ==========================================================================
+     FEATURED DEEP-DIVE ARTICLES (HIGH ADSENSE VALUE)
+=========================================================================== -->
+<section class="home-articles-section">
+    <div class="site-container">
+        <div class="section-header-row">
+            <div>
+                <h2 class="section-title">Featured Articles & Chronicles</h2>
+                <p class="section-subtitle">Complete, original research essays on Sarozai's heritage, culture, and achievements.</p>
+            </div>
+            <a href="/sarozai-village/history.html" class="section-link-btn">View All Archives →</a>
+        </div>
+
+        
+        
+        <div class="articles-grid">
+            
+            
+            <article class="article-card">
+                <div class="article-card-image-wrap">
+                    <img src="/sarozai-village/static/images/history-1.jpg" 
+                         alt="History of Sarozai" 
+                         class="article-card-img"
+                         data-lightbox-image data-caption="History of Sarozai" tabindex="0"
+                         onerror="this.onerror=null; this.src='/sarozai-village/static/images/home-1.jpg'">
+                    <span class="article-category-badge">History</span>
+                </div>
+                <div class="article-card-body">
+                    <h3 class="article-card-title">
+                        <a href="/sarozai-village/article/سروزئی کی مختصر معلومات اور وجہ تسمیہ.html">History of Sarozai</a>
+                    </h3>
+                    <p class="article-card-summary">Sarozai is a beautiful village with a historical background located in District Hangu, Khyber Pakhtunkhwa.
+
+Sarozai is a land of green fields, beautiful rivers, and clear springs, along with high mountains. This region is rich in beautiful scenery, forests, springs, and mineral wealth.</p>
+                    <div class="article-card-footer">
+                        <a href="/sarozai-village/article/سروزئی کی مختصر معلومات اور وجہ تسمیہ.html" class="read-more-link">
+                            Read Full Article <span>→</span>
+                        </a>
+                        <button type="button" class="quick-explore-btn btn-card-explore"
+                                data-title="History of Sarozai"
+                                data-subtitle="Sarozai and Its Historical Background"
+                                data-category="History"
+                                data-summary="Sarozai is a beautiful village with a historical background located in District Hangu, Khyber Pakhtunkhwa.
+
+Sarozai is a land of green fields, beautiful rivers, and clear springs, along with high mountains. This region is rich in beautiful scenery, forests, springs, and mineral wealth."
+                                data-slug="سروزئی کی مختصر معلومات اور وجہ تسمیہ"
+                                data-image="/sarozai-village/static/images/history-1.jpg"
+                                aria-label="Explore: History of Sarozai">
+                            Explore <span aria-hidden="true">&#8594;</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            
+            <article class="article-card">
+                <div class="article-card-image-wrap">
+                    <img src="/sarozai-village/static/images/culture-1.jpg" 
+                         alt="Hospitality &amp; Social Values" 
+                         class="article-card-img"
+                         data-lightbox-image data-caption="Hospitality &amp; Social Values" tabindex="0"
+                         onerror="this.onerror=null; this.src='/sarozai-village/static/images/home-1.jpg'">
+                    <span class="article-category-badge">Culture</span>
+                </div>
+                <div class="article-card-body">
+                    <h3 class="article-card-title">
+                        <a href="/sarozai-village/article/pashtunwali-and-hospitality-in-sarozai.html">Hospitality &amp; Social Values</a>
+                    </h3>
+                    <p class="article-card-summary">[Add brief description about traditional hospitality (Melmastia) and social values in Sarozai here.]</p>
+                    <div class="article-card-footer">
+                        <a href="/sarozai-village/article/pashtunwali-and-hospitality-in-sarozai.html" class="read-more-link">
+                            Read Full Article <span>→</span>
+                        </a>
+                        <button type="button" class="quick-explore-btn btn-card-explore"
+                                data-title="Hospitality &amp; Social Values"
+                                data-subtitle="Pashtunwali Traditions and Community Respect"
+                                data-category="Culture"
+                                data-summary="[Add brief description about traditional hospitality (Melmastia) and social values in Sarozai here.]"
+                                data-slug="pashtunwali-and-hospitality-in-sarozai"
+                                data-image="/sarozai-village/static/images/culture-1.jpg"
+                                aria-label="Explore: Hospitality &amp; Social Values">
+                            Explore <span aria-hidden="true">&#8594;</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            
+            <article class="article-card">
+                <div class="article-card-image-wrap">
+                    <img src="/sarozai-village/static/images/education-1.jpg" 
+                         alt="History of Education in Sarozai" 
+                         class="article-card-img"
+                         data-lightbox-image data-caption="History of Education in Sarozai" tabindex="0"
+                         onerror="this.onerror=null; this.src='/sarozai-village/static/images/home-1.jpg'">
+                    <span class="article-category-badge">Education</span>
+                </div>
+                <div class="article-card-body">
+                    <h3 class="article-card-title">
+                        <a href="/sarozai-village/article/educational-history-in-sarozai.html">History of Education in Sarozai</a>
+                    </h3>
+                    <p class="article-card-summary">[Add brief description about the history and progress of schooling in Sarozai here.]</p>
+                    <div class="article-card-footer">
+                        <a href="/sarozai-village/article/educational-history-in-sarozai.html" class="read-more-link">
+                            Read Full Article <span>→</span>
+                        </a>
+                        <button type="button" class="quick-explore-btn btn-card-explore"
+                                data-title="History of Education in Sarozai"
+                                data-subtitle="From Traditional Maktabs to Modern Classrooms"
+                                data-category="Education"
+                                data-summary="[Add brief description about the history and progress of schooling in Sarozai here.]"
+                                data-slug="educational-history-in-sarozai"
+                                data-image="/sarozai-village/static/images/education-1.jpg"
+                                aria-label="Explore: History of Education in Sarozai">
+                            Explore <span aria-hidden="true">&#8594;</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            
+            <article class="article-card">
+                <div class="article-card-image-wrap">
+                    <img src="/sarozai-village/static/images/notable-people-1.jpg" 
+                         alt="Respected Elders &amp; Community Leaders" 
+                         class="article-card-img"
+                         data-lightbox-image data-caption="Respected Elders &amp; Community Leaders" tabindex="0"
+                         onerror="this.onerror=null; this.src='/sarozai-village/static/images/home-1.jpg'">
+                    <span class="article-category-badge">Notable People</span>
+                </div>
+                <div class="article-card-body">
+                    <h3 class="article-card-title">
+                        <a href="/sarozai-village/article/prominent-community-elders-and-leaders.html">Respected Elders &amp; Community Leaders</a>
+                    </h3>
+                    <p class="article-card-summary">[Add brief description about prominent village elders and community figures of Sarozai here.]</p>
+                    <div class="article-card-footer">
+                        <a href="/sarozai-village/article/prominent-community-elders-and-leaders.html" class="read-more-link">
+                            Read Full Article <span>→</span>
+                        </a>
+                        <button type="button" class="quick-explore-btn btn-card-explore"
+                                data-title="Respected Elders &amp; Community Leaders"
+                                data-subtitle="Wise Leaders and Village Chiefs"
+                                data-category="Notable People"
+                                data-summary="[Add brief description about prominent village elders and community figures of Sarozai here.]"
+                                data-slug="prominent-community-elders-and-leaders"
+                                data-image="/sarozai-village/static/images/notable-people-1.jpg"
+                                aria-label="Explore: Respected Elders &amp; Community Leaders">
+                            Explore <span aria-hidden="true">&#8594;</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            
+            <article class="article-card">
+                <div class="article-card-image-wrap">
+                    <img src="/sarozai-village/static/images/places-1.jpg" 
+                         alt="Natural Springs (Chashmas)" 
+                         class="article-card-img"
+                         data-lightbox-image data-caption="Natural Springs (Chashmas)" tabindex="0"
+                         onerror="this.onerror=null; this.src='/sarozai-village/static/images/home-1.jpg'">
+                    <span class="article-category-badge">Places</span>
+                </div>
+                <div class="article-card-body">
+                    <h3 class="article-card-title">
+                        <a href="/sarozai-village/article/natural-springs-and-water-sources.html">Natural Springs (Chashmas)</a>
+                    </h3>
+                    <p class="article-card-summary">[Add brief description about natural freshwater springs and water streams in Sarozai here.]</p>
+                    <div class="article-card-footer">
+                        <a href="/sarozai-village/article/natural-springs-and-water-sources.html" class="read-more-link">
+                            Read Full Article <span>→</span>
+                        </a>
+                        <button type="button" class="quick-explore-btn btn-card-explore"
+                                data-title="Natural Springs (Chashmas)"
+                                data-subtitle="Freshwater Springs and Streams"
+                                data-category="Places"
+                                data-summary="[Add brief description about natural freshwater springs and water streams in Sarozai here.]"
+                                data-slug="natural-springs-and-water-sources"
+                                data-image="/sarozai-village/static/images/places-1.jpg"
+                                aria-label="Explore: Natural Springs (Chashmas)">
+                            Explore <span aria-hidden="true">&#8594;</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+            
+            <article class="article-card">
+                <div class="article-card-image-wrap">
+                    <img src="/sarozai-village/static/images/news-events-1.jpg" 
+                         alt="Community Welfare &amp; Social Work" 
+                         class="article-card-img"
+                         data-lightbox-image data-caption="Community Welfare &amp; Social Work" tabindex="0"
+                         onerror="this.onerror=null; this.src='/sarozai-village/static/images/home-1.jpg'">
+                    <span class="article-category-badge">Welfare</span>
+                </div>
+                <div class="article-card-body">
+                    <h3 class="article-card-title">
+                        <a href="/sarozai-village/article/community-welfare-and-youth-initiatives.html">Community Welfare &amp; Social Work</a>
+                    </h3>
+                    <p class="article-card-summary">[Add brief description about social welfare activities, youth volunteer groups, and community projects in Sarozai here.]</p>
+                    <div class="article-card-footer">
+                        <a href="/sarozai-village/article/community-welfare-and-youth-initiatives.html" class="read-more-link">
+                            Read Full Article <span>→</span>
+                        </a>
+                        <button type="button" class="quick-explore-btn btn-card-explore"
+                                data-title="Community Welfare &amp; Social Work"
+                                data-subtitle="Mutual Support, Youth Groups &amp; Welfare Committees"
+                                data-category="Welfare"
+                                data-summary="[Add brief description about social welfare activities, youth volunteer groups, and community projects in Sarozai here.]"
+                                data-slug="community-welfare-and-youth-initiatives"
+                                data-image="/sarozai-village/static/images/news-events-1.jpg"
+                                aria-label="Explore: Community Welfare &amp; Social Work">
+                            Explore <span aria-hidden="true">&#8594;</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================================
+     CORE WEBSITE SECTIONS OVERVIEW
+=========================================================================== -->
+<section class="home-sections-showcase">
+    <div class="site-container">
+        <div class="section-header-row text-center-row">
+            <h2 class="section-title">Discover Sarozai by Category</h2>
+        </div>
+
+        <div class="sections-features-grid">
+            <!-- 1. History -->
+            <div class="feature-tile">
+                <div class="feature-tile-media">
+                        <img src="/sarozai-village/static/images/history-1.jpg" alt="History of Sarozai" data-lightbox-image data-caption="History of Sarozai" tabindex="0">
+                </div>
+                <div class="feature-tile-content">
+                    <h3>The Chronicles of Historic Sarozai</h3>
+                    <p>Updated description for test verification.</p>
+                    <div class="tile-actions">
+                        <a href="/sarozai-village/history.html" class="tile-btn">Explore History →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Culture -->
+            <div class="feature-tile reverse">
+                <div class="feature-tile-media">
+                                <img src="/sarozai-village/static/images/culture-1.jpg" alt="Culture &amp; Traditions" data-lightbox-image data-caption="Culture &amp; Traditions" tabindex="0" onerror="this.onerror=null; this.src='/sarozai-village/static/images/home-1.jpg'">
+                </div>
+                <div class="feature-tile-content">
+                    <h3>Culture &amp; Traditions</h3>
+                    <p>Explore the traditions, customs, values, and community life of Sarozai Village.</p>
+                    <div class="tile-actions">
+                        <a href="/sarozai-village/culture.html" class="tile-btn">Explore Culture →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Education -->
+            <div class="feature-tile">
+                <div class="feature-tile-media">
+                        <img src="/sarozai-village/static/images/education-1.jpg" alt="Education in Sarozai" data-lightbox-image data-caption="Education in Sarozai" tabindex="0" onerror="this.onerror=null; this.src='/sarozai-village/static/images/home-1.jpg'">
+                </div>
+                <div class="feature-tile-content">
+                    <h3>Education in Sarozai</h3>
+                    <p>Discover schools, educational institutions, and people contributing to learning in Sarozai.</p>
+                    <div class="tile-actions">
+                        <a href="/sarozai-village/education.html" class="tile-btn">Explore Education →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Notable People & Scholars -->
+            <div class="feature-tile reverse">
+                <div class="feature-tile-media">
+                    <img src="/sarozai-village/static/images/notable-people-1.jpg" alt="Notable People of Sarozai" data-lightbox-image data-caption="Notable People of Sarozai" tabindex="0" onerror="this.onerror=null; this.src='/sarozai-village/static/images/home-1.jpg'">
+                </div>
+                <div class="feature-tile-content">
+                    <h3>Notable People of Sarozai &amp; Our Scholars</h3>
+                    <p>Learn about people from Sarozai who have made meaningful contributions to our village and beyond.</p>
+                    <div class="tile-actions">
+                        <a href="/sarozai-village/notable-people.html" class="tile-btn">Notable Figures →</a>
+                        <a href="/sarozai-village/scholars.html" class="tile-btn ghost">Our Scholars →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Places & Landmarks -->
+            <div class="feature-tile">
+                <div class="feature-tile-media">
+                        <img src="/sarozai-village/static/images/places-1.jpg" alt="Places of Sarozai" data-lightbox-image data-caption="Places of Sarozai" tabindex="0">
+                </div>
+                <div class="feature-tile-content">
+                    <h3>Places of Sarozai</h3>
+                    <p>Discover important places, natural springs, landmarks, and locations around Sarozai.</p>
+                    <div class="tile-actions">
+                        <a href="/sarozai-village/places.html" class="tile-btn">Explore Places →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Gallery -->
+            <div class="feature-tile reverse">
+                <div class="feature-tile-media">
+                        <img src="/sarozai-village/static/images/gallery-1.jpg" alt="Sarozai Visual Gallery" data-lightbox-image data-caption="Curated Visual Gallery of Sarozai" tabindex="0">
+                </div>
+                <div class="feature-tile-content">
+                    <h3>Curated Visual Gallery</h3>
+                    <p>An interactive high-resolution gallery capturing the architecture, daily life, mountain sunsets, and cultural events of Sarozai.</p>
+                    <div class="tile-actions">
+                        <a href="/sarozai-village/gallery.html" class="tile-btn">Open Gallery →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="archive-section">
+    <div class="site-container">
+        <div class="section-header-row">
+            <div>
+                <h2 class="section-title">From the Sarozai Archives</h2>
+                <p class="section-subtitle">A small selection from the growing collection of village articles.</p>
+            </div>
+            <a href="/sarozai-village/history.html" class="section-link-btn">Explore Archives <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="archive-grid">
+            
+            <article class="archive-card">
+                <span class="archive-card-category">History</span>
+                <h3><a href="/sarozai-village/article/سروزئی کی مختصر معلومات اور وجہ تسمیہ.html">History of Sarozai</a></h3>
+                <p>Sarozai is a beautiful village with a historical background located in District Hangu, Khyber Pakhtunkhwa.
+
+Sarozai is a land of green fields, beautiful rivers, and clear springs, along with high mountains. This region is rich in beautiful scenery, forests, springs, and mineral wealth.</p>
+                <a href="/sarozai-village/article/سروزئی کی مختصر معلومات اور وجہ تسمیہ.html" class="archive-card-link">Read archive entry <span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="archive-card">
+                <span class="archive-card-category">History</span>
+                <h3><a href="/sarozai-village/article/strategic-geography-and-routes.html">Location &amp; Historical Routes</a></h3>
+                <p>[Add brief description about Sarozai&#39;s geographic location and historical trade routes here.]</p>
+                <a href="/sarozai-village/article/strategic-geography-and-routes.html" class="archive-card-link">Read archive entry <span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="archive-card">
+                <span class="archive-card-category">History</span>
+                <h3><a href="/sarozai-village/article/traditional-settlement-patterns.html">Historic Quarters &amp; Gharhi Sarozai</a></h3>
+                <p>[Add brief description about Gharhi Sarozai and historic village quarters here.]</p>
+                <a href="/sarozai-village/article/traditional-settlement-patterns.html" class="archive-card-link">Read archive entry <span aria-hidden="true">→</span></a>
+            </article>
+            
+            <article class="archive-card">
+                <span class="archive-card-category">History</span>
+                <h3><a href="/sarozai-village/article/historical-land-records-and-archives.html">Historical Land Records &amp; Settlements</a></h3>
+                <p>[Add brief description about village land records, historical boundaries, and archives here.]</p>
+                <a href="/sarozai-village/article/historical-land-records-and-archives.html" class="archive-card-link">Read archive entry <span aria-hidden="true">→</span></a>
+            </article>
+            
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- ======================================================================
+         SITE FOOTER (WITH ADSENSE LEGAL LINKS)
+    ======================================================================= -->
+    <footer class="site-footer">
+        <div class="footer-content footer-container">
+            <!-- Brand & Mission Column -->
+            <div class="footer-brand">
+                <img src="/sarozai-village/static/images/sarozai-logo.png" 
+                     alt="Sarozai Village" 
+                     class="footer-logo"
+                     onerror="this.onerror=null; this.src='/sarozai-village/static/images/home-1.jpg'">
+                <p class="footer-village-name">Sarozai Village</p>
+                <p class="brand-tagline">Our Village. Our History. Our Story.</p>
+                <p class="brand-desc">
+                    A digital archive dedicated to the history, people, culture and heritage of Sarozai Village.
+                </p>
+            </div>
+
+            <!-- Quick Navigation -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Explore Sarozai</h3>
+                <ul class="footer-links-list">
+                    <li><a href="/sarozai-village/index.html">Home</a></li>
+                    <li><a href="/sarozai-village/about.html">About Sarozai</a></li>
+                    <li><a href="/sarozai-village/history.html">History & Roots</a></li>
+                    <li><a href="/sarozai-village/culture.html">Culture & Traditions</a></li>
+                    <li><a href="/sarozai-village/education.html">Education & Schools</a></li>
+                    <li><a href="/sarozai-village/notable-people.html">Notable People</a></li>
+                    <li><a href="/sarozai-village/scholars.html">Our Scholars</a></li>
+                </ul>
+            </div>
+
+            <!-- Community & Media -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Community & Media</h3>
+                <ul class="footer-links-list">
+                    <li><a href="/sarozai-village/places.html">Places & Landmarks</a></li>
+                    <li><a href="/sarozai-village/gallery.html">Photo Gallery</a></li>
+                    <li><a href="/sarozai-village/welfare.html">Welfare & Mutual Aid</a></li>
+                    <li><a href="/sarozai-village/news.html">News & Announcements</a></li>
+                    <li><a href="/sarozai-village/contact.html">Contact Administration</a></li>
+                </ul>
+            </div>
+
+            <!-- Mandatory Legal & Compliance -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Legal & Compliance</h3>
+                <ul class="footer-links-list">
+                    <li><a href="/sarozai-village/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="/sarozai-village/terms.html">Terms & Conditions</a></li>
+                    <li><a href="/sarozai-village/disclaimer.html">Disclaimer & Disclosures</a></li>
+                    <li><a href="/sarozai-village/about.html">About the Publisher</a></li>
+                    <li><a href="/sarozai-village/contact.html">Support & Feedback</a></li>
+                </ul>
+
+                <div class="admin-access-box">
+                    
+                    <a href="#" class="footer-admin-btn">  Admin Portal</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="footer-container bottom-flex">
+                <p class="copyright-text">
+                    © 2026 <strong>Sarozai Village Platform</strong>. All rights reserved.
+                </p>
+                <div class="legal-mini-links">
+                    <a href="/sarozai-village/privacy-policy.html">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="/sarozai-village/terms.html">Terms</a>
+                    <span>•</span>
+                    <a href="/sarozai-village/disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================================================================
+         UNIVERSAL INTERACTIVE MODALS (EXPLORE & IMAGE VIEWER)
+    ======================================================================= -->
+    <!-- 1. Universal Explore Detail Modal -->
+    <div class="uni-modal" id="uniExploreModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="uniExploreTitle">
+        <div class="uni-modal-overlay" id="uniExploreOverlay"></div>
+        <div class="uni-modal-box">
+            <button type="button" class="uni-modal-close" id="uniCloseExplore" aria-label="Close dialog">✕</button>
+            <div class="uni-modal-hero" id="uniExploreHero" hidden>
+                <img id="uniExploreImage" src="" alt="" class="uni-modal-hero-img">
+            </div>
+            <div class="uni-modal-header">
+                <span class="uni-modal-category" id="uniExploreCategory">Sarozai Heritage</span>
+                <h2 class="uni-modal-title" id="uniExploreTitle">Article Title</h2>
+                <p class="uni-modal-subtitle" id="uniExploreSubtitle"></p>
+            </div>
+            <div class="uni-modal-body">
+                <div class="uni-modal-text" id="uniExploreText"></div>
+            </div>
+            <div class="uni-modal-footer">
+                <a href="#" class="uni-modal-read-btn" id="uniExploreReadFull">Read Complete In-Depth Article →</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Universal image lightbox -->
+    <div class="uni-image-modal" id="uniImageModal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="uni-image-overlay" id="uniImageOverlay"></div>
+        <button type="button" class="uni-image-close" id="uniCloseImage" aria-label="Close image viewer">✕</button>
+        <div class="uni-image-wrap">
+            <img src="" alt="Full view" id="uniFullImage">
+            <p class="uni-image-caption" id="uniImageCaption"></p>
+        </div>
+    </div>
+
+    <!-- Global Scripts -->
+    <script src="/sarozai-village/static/js/script.js"></script>
+    <script src="/sarozai-village/static/js/modal.js"></script>
+    
+</body>
+</html>

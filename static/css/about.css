@@ -1,0 +1,223 @@
+.gl-21,
+.gl-21 * ,
+.gl-21 *::before,
+.gl-21 *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.gl-21 ::selection {
+    background: oklch(0.6 0.12 40);
+    color: #fff;
+}
+
+.gl-21 {
+    --accent: oklch(0.55 0.13 40);
+
+    font-family: 'Segoe UI', system-ui, sans-serif;
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 60px 20px;
+
+    background: #d9cfc0;
+
+    background-image:
+        radial-gradient(
+            rgba(120,100,80,.12) 1px,
+            transparent 1px
+        );
+
+    background-size: 6px 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gl-21__content {
+    width: min(1000px, 100%);
+}
+
+.gl-21__pile {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    justify-content: center;
+    align-items: center;
+
+    width: min(820px, 100%);
+
+    margin: 0 auto;
+}
+
+.gl-21__pola {
+    background: #fffdf8;
+
+    padding: 12px 12px 44px;
+
+    border-radius: 2px;
+
+    width: 190px;
+
+    box-shadow:
+        0 10px 24px -10px rgba(60,40,20,.5);
+
+    transition:
+        transform .35s cubic-bezier(.2,.7,.2,1),
+        box-shadow .35s;
+
+    outline: none;
+}
+
+.gl-21__pola img {
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    background: #e7e0d4;
+
+    filter:
+        sepia(.18)
+        contrast(1.02);
+}
+
+.gl-21__pola figcaption {
+    margin-top: 12px;
+
+    text-align: center;
+
+    font-family:
+        'Segoe Script',
+        'Bradley Hand',
+        cursive;
+
+    font-size: 17px;
+
+    color: #5a4a38;
+}
+
+.gl-21__pola:nth-child(1) {
+    transform: rotate(-6deg);
+}
+
+.gl-21__pola:nth-child(2) {
+    transform: rotate(4deg);
+}
+
+.gl-21__pola:nth-child(3) {
+    transform: rotate(-3deg);
+}
+
+.gl-21__pola:nth-child(4) {
+    transform: rotate(5deg);
+}
+
+.gl-21__pola:hover,
+.gl-21__pola:focus-visible {
+    transform: rotate(0) scale(1.06);
+
+    z-index: 5;
+
+    box-shadow:
+        0 24px 44px -16px rgba(60,40,20,.6);
+}
+
+.gl-21__pola:focus-visible {
+    outline:
+        3px solid var(--accent);
+
+    outline-offset: 4px;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================== */
+
+.gl-21__description {
+    max-width: 800px;
+
+    margin: 55px auto 0;
+
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+.gl-21__description h2 {
+    margin-bottom: 18px;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    font-weight: 400;
+
+    color: #3f3428;
+}
+
+.gl-21__description p {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #5a4a38;
+}
+
+
+/* =========================
+   MOBILE
+========================== */
+
+@media (max-width: 600px) {
+
+    .gl-21 {
+        padding: 45px 12px;
+    }
+
+    .gl-21__pile {
+        gap: 0;
+    }
+
+    .gl-21__pola {
+        width: 145px;
+
+        padding:
+            9px
+            9px
+            35px;
+    }
+
+    .gl-21__pola figcaption {
+        font-size: 14px;
+    }
+
+    .gl-21__description {
+        margin-top: 45px;
+    }
+
+    .gl-21__description h2 {
+        font-size: 27px;
+    }
+
+    .gl-21__description p {
+        font-size: 15px;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gl-21__pola {
+        transition: none;
+    }
+}

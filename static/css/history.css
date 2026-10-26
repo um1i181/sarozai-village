@@ -1,0 +1,453 @@
+/* =========================================================
+   SAROZAI HISTORY
+========================================================= */
+
+.history-section,
+.history-section *,
+.history-section *::before,
+.history-section *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.history-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 45px 15px;
+
+    background: #f5f1e8;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "SF Pro Text",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+}
+
+
+/* =========================================================
+   CARD GRID
+========================================================= */
+
+.history-grid {
+    width: min(1100px, 100%);
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.history-card {
+    position: relative;
+
+    min-height: 330px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #222;
+
+    border: 1px solid rgba(255,255,255,.2);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.12);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.history-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.18);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.history-card__image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.history-card__image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform .5s ease;
+}
+
+.history-card:hover
+.history-card__image img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.history-card__overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.92),
+            rgba(0,0,0,.48),
+            rgba(0,0,0,.08)
+        );
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.history-card__content {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+
+    padding: 25px 22px;
+}
+
+.history-card__number {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #e2c99f;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.history-card h2 {
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    font-weight: 400;
+
+    margin-bottom: 8px;
+}
+
+.history-card p {
+    color: rgba(255,255,255,.82);
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    margin-bottom: 17px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.history-card__buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.history-btn {
+    border: none;
+
+    cursor: pointer;
+
+    padding: 9px 13px;
+
+    border-radius: 9px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition:
+        transform .2s ease,
+        background .2s ease;
+}
+
+.history-btn:hover {
+    transform: translateY(-2px);
+}
+
+.history-btn--explore {
+    background: white;
+
+    color: #222;
+}
+
+
+/* =========================================================
+   EXPLORE MODAL
+========================================================= */
+
+.history-modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0,0,0,.75);
+
+    backdrop-filter: blur(8px);
+}
+
+.history-modal.active {
+    display: flex;
+}
+
+.history-modal__box {
+    position: relative;
+
+    width: min(600px, 100%);
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    padding: 35px 28px;
+
+    border-radius: 20px;
+
+    background: #fffdf8;
+
+    color: #222;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.3);
+}
+
+.history-modal__label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #8b7353;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.history-modal__box h2 {
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    font-weight: 400;
+
+    margin-bottom: 15px;
+}
+
+.history-modal__box p {
+    color: #625b52;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+.history-modal__close,
+.history-image-modal__close {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,.08);
+
+    color: #222;
+
+    font-size: 25px;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   FULL IMAGE MODAL
+========================================================= */
+
+.history-image-modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1100;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: rgba(0,0,0,.94);
+}
+
+.history-image-modal.active {
+    display: flex;
+}
+
+.history-image-modal img {
+    max-width: 95vw;
+    max-height: 90vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.5);
+}
+
+.history-image-modal__close {
+    position: fixed;
+
+    z-index: 2;
+
+    top: 18px;
+    right: 18px;
+
+    background: rgba(255,255,255,.15);
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.3);
+}
+
+.history-image-modal__close:hover {
+    background: rgba(255,255,255,.25);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .history-section {
+        padding: 30px 12px;
+    }
+
+    .history-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .history-card {
+        min-height: 310px;
+    }
+
+    .history-card__content {
+        padding: 22px 18px;
+    }
+
+    .history-card h2 {
+        font-size: 22px;
+    }
+
+    .history-card p {
+        font-size: 12px;
+    }
+
+    .history-btn {
+        padding: 8px 11px;
+
+        font-size: 11px;
+    }
+
+    .history-modal__box {
+        padding: 30px 22px;
+    }
+
+    .history-modal__box h2 {
+        font-size: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .history-card,
+    .history-card__image img,
+    .history-btn {
+        transition: none;
+    }
+
+}

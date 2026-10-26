@@ -1,0 +1,646 @@
+/* =========================================
+   SAROZAI PLACES
+   MOBILE FIRST
+========================================= */
+
+
+.places,
+.places * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   MAIN SECTION
+========================================= */
+
+.places {
+
+    --accent: #9fc9b5;
+
+    width: 100%;
+
+    min-height: 100vh;
+    min-height: 100svh;
+
+    padding:
+        24px
+        14px
+        30px;
+
+    color: #ffffff;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(80, 90, 150, .28),
+            transparent 42%
+        ),
+
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(45, 120, 105, .20),
+            transparent 40%
+        ),
+
+        linear-gradient(
+            145deg,
+            #0b0d18,
+            #080a0b 60%,
+            #071211
+        );
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.places__header {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    margin:
+        0
+        auto
+        20px;
+
+    text-align: center;
+
+}
+
+
+.places__eyebrow {
+
+    margin-bottom: 5px;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: .18em;
+
+    color:
+        rgba(255,255,255,.52);
+
+}
+
+
+.places__header h1 {
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 30px;
+
+    line-height: 1.1;
+
+    font-weight: 400;
+
+    letter-spacing: -.02em;
+
+}
+
+
+.places__intro {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin:
+        8px
+        auto
+        0;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color:
+        rgba(255,255,255,.60);
+
+}
+
+
+/* =========================================
+   GLASS CARD
+========================================= */
+
+.places__card {
+
+    width: 100%;
+
+    max-width: 520px;
+
+    margin: 0 auto;
+
+    padding: 9px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.16);
+
+    border-radius: 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.115),
+            rgba(255,255,255,.045)
+        );
+
+    box-shadow:
+
+        inset
+        0 1px 0
+        rgba(255,255,255,.14),
+
+        0 18px 45px
+        rgba(0,0,0,.32);
+
+    backdrop-filter:
+        blur(16px)
+        saturate(125%);
+
+    -webkit-backdrop-filter:
+        blur(16px)
+        saturate(125%);
+
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.places__image-wrap {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background: #151515;
+
+    touch-action: pan-y;
+
+    user-select: none;
+
+    -webkit-user-select: none;
+
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.places__image {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    user-select: none;
+
+    -webkit-user-drag: none;
+
+    transition:
+        opacity .25s ease,
+        transform .3s ease;
+
+}
+
+
+/* =========================================
+   IMAGE CHANGE ANIMATION
+========================================= */
+
+.places__image.is-changing {
+
+    opacity: .25;
+
+    transform: scale(1.02);
+
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.places__navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    margin:
+        10px
+        0
+        3px;
+
+}
+
+
+/* =========================================
+   ARROWS
+========================================= */
+
+.places__arrow {
+
+    flex:
+        0
+        0
+        32px;
+
+    width: 32px;
+
+    height: 32px;
+
+    padding: 0;
+
+    border:
+        1px solid
+        rgba(255,255,255,.18);
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.07);
+
+    color: #ffffff;
+
+    font-size: 21px;
+
+    line-height: 1;
+
+    display: grid;
+
+    place-items: center;
+
+    cursor: pointer;
+
+    transition:
+        background .2s ease,
+        transform .2s ease;
+
+}
+
+
+.places__arrow:active {
+
+    transform: scale(.92);
+
+}
+
+
+.places__arrow:hover {
+
+    background:
+        rgba(255,255,255,.14);
+
+}
+
+
+/* =========================================
+   DOT CONTAINER
+========================================= */
+
+.places__dots {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    max-width: 170px;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   DOT
+========================================= */
+
+.places__dot {
+
+    flex:
+        0
+        0
+        auto;
+
+    width: 7px;
+
+    height: 7px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.28);
+
+    cursor: pointer;
+
+    transition:
+        width .2s ease,
+        background .2s ease,
+        transform .2s ease;
+
+}
+
+
+/* =========================================
+   ACTIVE DOT
+========================================= */
+
+.places__dot.active {
+
+    width: 19px;
+
+    border-radius: 10px;
+
+    background:
+        var(--accent);
+
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.places__content {
+
+    padding:
+        8px
+        5px
+        7px;
+
+}
+
+
+/* =========================================
+   PLACE NUMBER
+========================================= */
+
+.places__number {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: .15em;
+
+    color:
+        var(--accent);
+
+}
+
+
+/* =========================================
+   PLACE TITLE
+========================================= */
+
+.places__content h2 {
+
+    margin-bottom: 6px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 23px;
+
+    line-height: 1.15;
+
+    font-weight: 400;
+
+    color: #ffffff;
+
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.places__content p {
+
+    font-size: 12.5px;
+
+    line-height: 1.55;
+
+    color:
+        rgba(255,255,255,.66);
+
+}
+
+
+/* =========================================
+   SWIPE HINT
+========================================= */
+
+.places__hint {
+
+    margin-top: 10px;
+
+    text-align: center;
+
+    font-size: 10px;
+
+    color:
+        rgba(255,255,255,.36);
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 600px) {
+
+    .places {
+
+        padding:
+            35px
+            20px
+            40px;
+
+    }
+
+
+    .places__header {
+
+        margin-bottom: 25px;
+
+    }
+
+
+    .places__header h1 {
+
+        font-size: 36px;
+
+    }
+
+
+    .places__intro {
+
+        font-size: 13px;
+
+    }
+
+
+    .places__card {
+
+        max-width: 620px;
+
+        padding: 11px;
+
+        border-radius: 23px;
+
+    }
+
+
+    .places__content {
+
+        padding:
+            10px
+            6px
+            8px;
+
+    }
+
+
+    .places__content h2 {
+
+        font-size: 27px;
+
+    }
+
+
+    .places__content p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+
+    }
+
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 1000px) {
+
+    .places {
+
+        padding-top: 40px;
+
+    }
+
+
+    .places__card {
+
+        max-width: 700px;
+
+    }
+
+
+    .places__header h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .places__image-wrap {
+
+        aspect-ratio: 16 / 8.5;
+
+    }
+
+
+    .places__content h2 {
+
+        font-size: 29px;
+
+    }
+
+
+    .places__content p {
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .places__image {
+
+        transition: none;
+
+    }
+
+}
